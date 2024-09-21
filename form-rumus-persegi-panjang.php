@@ -11,22 +11,22 @@
         <!-- Content here -->
         <div class="card mt-5">
             <div class="card-header bg-success text-white">
-                Featured
+                Rumus Persegi panjang
             </div>
             <div class="card-body">
-                <form>
+                <form action="proses.php" method="POST">
                     <div class="mb-3">
-                        <label  class="form-label">panjang</label>
-                        <input type="email" class="form-control" placeholder="masukan panjang">
+                        <label class="form-label">panjang</label>
+                        <input type="number" name="panjang" class="form-control" placeholder="masukan panjang">
                     </div>
                     <div class="mb-3">
-                        <label  class="form-label">lebar</label>
-                        <input type="email" class="form-control" placeholder="masukan lebar">
+                        <label class="form-label">lebar</label>
+                        <input type="number" name="lebar" class="form-control" placeholder="masukan lebar">
                     </div>
                     <div class="mb-3">
-                        <button type="button" class="btn btn-success">simpan</button>
+                        <button type="submit" class="btn btn-success">simpan</button>
                     </div>
-                <form>
+                </form>
             </div>
         </div>
         
