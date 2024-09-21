@@ -15,7 +15,7 @@
             </div>
             <div class="card-body">
                 <form>
-                    <div class="mb-3">
+                    <div class="mb-3 col-3">
                         <label  class="form-label">panjang</label>
                         <input type="email" class="form-control" placeholder="masukan panjang">
                     </div>
@@ -24,7 +24,7 @@
                         <input type="email" class="form-control" placeholder="masukan lebar">
                     </div>
                     <div class="mb-3">
-                        <button type="button" class="btn btn-success">simpan</button>
+                        <button type="submit" class="btn btn-success">simpan</button>
                     </div>
                 <form>
             </div>
