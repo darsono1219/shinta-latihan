@@ -1,34 +1,27 @@
-aplikasi ini menggunakan php dasar untuk latihan 
+### clone
+* git clone https://github.com/darsono1219/pandu-pramuka.git
 
-#front-and
-   - Cristian XI RPL 2
+* cd pandu-pramuka
+* npm install
 
-#Back-and
-   - Shinta XI RPL 1
+### menjalankan ionic
+* ionic serve
 
-#membuat clone
-- git clone <link dari github>
+### membuat branch baru
+* git branch "nama fitur"
 
-#menguplod ke git
-- git add -A 
-(digunakan untuk menambahkan semua perubahan yang ada di dalam repository ke staging area)
+### pindah branch
+* git checkout "nama fitur"
 
-- git status 
-(digunakan untuk menampilkan status dari working directory dan staging area)
+### upload ke git
+* git add -A
+* git status
+* git branch (pastikan didalam folder fitur)
+* git commit -m "pesan fitur"
+* git push origin main
 
-- git commit -m "pesan yang diinginkan"
-(digunakan untuk menyimpan perubahan yang ada di staging area ke dalam repository lokal)
+### mengambil perubahan branch
+* git pull origin main
 
-- git push origin branch
-digunakan untuk mengirim (push) commit yang ada di repository lokal ke repository remote
-
-#melihat branch dan membuat branch
-- git branch nama-branch-baru
-(membuat branch baru)
-
-- git checkout nama_branch
-(berpindah branch)
-
-
-
-
+### membuat file page di ionic
+* ionic g page "nama-page"
