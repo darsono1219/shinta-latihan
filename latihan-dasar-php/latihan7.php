@@ -6,14 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>rumus persegi panjang</h2>
+    <h2>luas persegi</h2>
     <form>
         <label>panjang</label><br>
-        <input type=" "><br><br>
+        <input type=""><br><br>
         <label>lebar</label><br>
-        <input type=" "><br><br>
-        <button type=" ">simpan</button>
+        <input type=""><br><br>
+        <label>luas persegi</label><br>
+        <input type=""><br><br>
+        <button type=""></button>
     </form>
-    
 </body>
 </html>
