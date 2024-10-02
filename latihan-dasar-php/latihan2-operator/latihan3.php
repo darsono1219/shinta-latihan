@@ -6,14 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>luas persegi</h2>
+    <h2>menabung</h2>
     <form>
-        <label>panjang</label><br>
+        <label>saldo awal</label><br>
         <input type=""><br><br>
-        <label>lebar</label><br>
+
+        <label>bunga</label><br>
         <input type=""><br><br>
-        <label>luas persegi</label><br>
+
+        <label>bulan</label><br>
         <input type=""><br><br>
+
+        <label>saldo akhir</label><br>
+        <input type=""><br><br>
+        
         <button type=""></button>
     </form>
 </body>

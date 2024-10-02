@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulir Jadwal Pelajaran</title>
 </head>
 <body>
-    <h2>menabung</h2>
+
+    <h2>Formulir Jadwal Pelajaran</h2>
     <form>
-        <label>phi</label><br>
+        <label>Hari:</label><br>
         <input type=""><br><br>
-        <label>jari-jari</label><br>
+
+        <label>Jadwal Pelajaran:</label><br>
         <input type=""><br><br>
-        <label>luas lingkaran</label><br>
+
+        <label>Jam ke:</label><br>
         <input type=""><br><br>
-        <button type=""></button>
+
+        <button type="">Kirim</button>
     </form>
+
 </body>
 </html>
