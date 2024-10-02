@@ -8,14 +8,15 @@
 <body>
     <h2>menabung</h2>
     <form>
-        <label>saldo awal</label><br>
+        <label>phi</label><br>
         <input type=""><br><br>
-        <label>bunga</label><br>
+
+        <label>jari-jari</label><br>
         <input type=""><br><br>
-        <label>bulan</label><br>
+
+        <label>luas lingkaran</label><br>
         <input type=""><br><br>
-        <label>saldo akhir</label><br>
-        <input type=""><br><br>
+        
         <button type=""></button>
     </form>
 </body>

@@ -6,18 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>pajak</h2>
+    <h2>keuntungan</h2>
     <form>
-        <label>pajak</label><br>
+        <label>harga awal</label><br>
         <input type=""><br><br>
-        <label>gaji kotor</label><br>
+
+        <label>harga ecer</label><br>
         <input type=""><br><br>
-        <label>potongan telat</label><br>
+
+        <label>harga beli</label><br>
         <input type=""><br><br>
-        <label>potongan pajak</label><br>
+
+        <label>harga jual</label><br>
         <input type=""><br><br>
-        <label>pendapatan perbulan</label><br>
+
+        <label>keuntungan</label><br>
         <input type=""><br><br>
+        
         <button type=""></button>
     </form>
 </body>

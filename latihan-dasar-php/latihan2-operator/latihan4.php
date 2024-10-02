@@ -6,14 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>kecepatan waktu</h2>
+    <h2>pajak</h2>
     <form>
-        <label>jarak</label><br>
+        <label>pajak</label><br>
         <input type=""><br><br>
-        <label>waktu</label><br>
+
+        <label>gaji kotor</label><br>
         <input type=""><br><br>
-        <label>kecepatan</label><br>
+
+        <label>potongan telat</label><br>
         <input type=""><br><br>
+
+        <label>potongan pajak</label><br>
+        <input type=""><br><br>
+
+        <label>pendapatan perbulan</label><br>
+        <input type=""><br><br>
+        
         <button type=""></button>
     </form>
 </body>
