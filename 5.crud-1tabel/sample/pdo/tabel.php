@@ -7,7 +7,7 @@
 <body>
 <div class="container">
     <br>
-    <h4>CRUD Sederhana DATA TABEL SISWA</h4>
+    <h4>CRUD Sederhana Data Tabel Siswa</h4>
     <table class="table table-bordered table-hover">
         <br>
         <thead>
@@ -16,25 +16,59 @@
             <th>Nama</th>
             <th>Kelas</th>
             <th>Jurusan</th>
-            <th colspan=''>Aksi</th>
-
+            <th>Aksi</th>
         </tr>
         </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>celiboy</td>
-                <td>deni</td>
-                <td>indramayi</td>
-                <td>
-                    <a href="" class="btn btn-warning" role="">View</a>
-                    <a href="" class="btn btn-warning" role="">Update</a>
-                    <a href="" class="btn btn-danger" role="">Delete</a>
-                </td>
-            </tr>
-            </tbody>
+        <tbody>
+        <?php
+        // masukan konfigurasi koneksi database
+        include 'config.php';
+
+        try {
+            // Deskripsi
+            // Buat query select data pada tabel siswa
+            $sql = "SELECT * FROM siswa";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute();
+
+            // Jika ada data, tampilkan
+            if ($stmt->rowCount() > 0) {
+                // Buat penomoran bayangan
+                $no = 1;
+
+                // Lakukan perulangan untuk menampilkan isi dari tabel
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    ?>
+                    <tr>
+                        <td><?= $row['id'] ?></td>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['kelas'] ?></td>
+                        <td><?= $row['jurusan'] ?></td>
+                        <td>
+                            <a href="view.php?id=<?= $row['id'] ?>" class="btn btn-info">View</a>
+                            <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-warning">Update</a>
+                            <a href="proses-delete.php?id=<?= $row['id'] ?>" class="btn btn-danger" onclick="return confirm('Hapus data ini?')">Delete</a>
+                        </td>
+                    </tr>
+                    <?php
+                }
+            } else {
+                ?>
+                <tr>
+                    <td colspan="5">Tidak ada data.</td>
+                </tr>
+                <?php
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+
+        // Putuskan koneksi dengan database
+        $conn = null;
+        ?>
+        </tbody>
     </table>
-    <a href="" class="btn btn-primary" role="">Tambah Data</a>
+    <a href="tambah.php" class="btn btn-primary" role="button">Tambah Data</a>
 </div>
 </body>
 </html>

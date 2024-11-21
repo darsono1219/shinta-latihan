@@ -8,31 +8,26 @@
 </head>
 <body>
 <div class="container">
-    <h2>Ubah DATA SISWA</h2>
-    <form >
-        <div class="form-group">
-            <label>Id :</label>
-            <input type="" name="" class="form-control" placeholder="Masukan Username" required />
-
-        </div>
+    <h2>TAMBAH DATA SISWA</h2>
+    <form action="proses-tambah.php" method="POST">
         <div class="form-group">
             <label>Nama:</label>
-            <input type="" name="" class="form-control" placeholder="Masukan Username" required />
+            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama"/>
 
         </div>
         <div class="form-group">
             <label>Kelas:</label>
-            <input type="" name="" class="form-control" placeholder="Masukan Nama" required/>
+            <input type="text" name="kelas" class="form-control" placeholder="Masukan Kelas"/>
 
         </div>
         <div class="form-group">
             <label>Jurusan:</label>
-            <input type="" name="" class="form-control" placeholder="Masukan Nama" required/>
+            <input type="text" name="jurusan" class="form-control" placeholder="Masukan Jurusan"/>
 
         </div><br>
         <div class="form-group">
-            <button class="btn btn-primary">Kembali</button>
-            <button type="" name="" class="btn btn-success">Ubah</button>
+            <a href="tabel.php" class="btn btn-primary">Kembali</a>
+            <button type="submit" class="btn btn-success">Tambah</button>
         </div>
     </form>
 </div>
