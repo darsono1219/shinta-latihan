@@ -10,15 +10,18 @@
     <h2>Ubah Data Siswa</h2>
 
     <?php
-        include 'config.php'; // Koneksi ke database
+        // masukan konfigurasi koneksi database
+        include 'config.php';
 
-        // Ambil ID siswa dari URL
+        // deklarasi & inisialisasi
+        // ambil id dari url link
         $id = $_GET['id'];
         $query = "SELECT * FROM siswa WHERE id = $id";
         $result = $conn->query($query);
 
+        // lakukan pengecekan data ada, jika ada maka pecah menjadi array
         if ($result->num_rows > 0) {
-            $row = $result->fetch_assoc(); // Ambil data siswa berdasarkan ID
+            $row = $result->fetch_assoc();
         }
     ?>
 

@@ -21,14 +21,20 @@
         </thead>
         <tbody>
         <?php
+        // masukan konfigurasi koneksi database
         include 'config.php';
 
+        // deskripsi
+        // buat query select data pada tabel siswa
         $sql = "SELECT * FROM siswa";
         $result = $conn->query($sql);
         
-
+        // jika row tidak kosong maka
         if ($result->num_rows > 0) {
+            //buat penomoran bayangan
             $no = 1;
+
+            //lakukan perulangan untuk menampilkan isi dari tabel
             while ($row = $result->fetch_assoc()) {
                
                 ?>
@@ -52,6 +58,7 @@
             </tr>
             <?php
         }
+        //putuskan koneksi dengan database
         $conn->close();
         ?>
         </tbody>

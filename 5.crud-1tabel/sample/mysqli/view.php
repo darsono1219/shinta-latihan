@@ -10,13 +10,18 @@
     <h2>Detail Data Siswa</h2>
 
     <?php
-    include 'config.php'; // Koneksi ke database
+    // masukan konfigurasi koneksi database
+    include 'config.php';
 
     // Ambil ID siswa dari URL
-    $id = $_GET['id']; // ID siswa didapat dari URL
-    $query = "SELECT * FROM siswa WHERE"; // Query untuk ambil data siswa
+    $id = $_GET['id'];
+
+    // buat query select data dari tabel siswa
+    $query = "SELECT * FROM siswa WHERE";
     $result = $conn->query($query);
 
+    // jika row tidak kosong maka tampilkan data kosong pada tabel
+    // jika tidak pecah data menggunakan array
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc(); // Ambil data siswa berdasarkan ID
     } else {
