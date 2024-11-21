@@ -18,7 +18,7 @@
 
     // jika row tidak kosong maka tampilkan data kosong pada tabel
     // jika tidak pecah data menggunakan array
-    
+
     ?>
     <table class="table table-bordered">
         <tr>

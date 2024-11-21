@@ -7,23 +7,23 @@
 </head>
 <body>
 <div class="container">
-    <h2>Detail Data Siswa</h2>
+    <h2>Detail Data GURU</h2>
 
     <?php
     // masukan konfigurasi koneksi database
     include 'config.php';
 
-    // Ambil ID siswa dari URL
-    $id = $_GET['id'];
+    // Ambil ID guru dari URL
+    $id_guru = $_GET['id_guru'];
 
     // buat query select data dari tabel siswa
-    $query = "SELECT * FROM siswa WHERE id='$id'";
+    $query = "SELECT * FROM guru JOIN mapel On guru.id_guru=mapel.id_guru Where guru.id_guru='$id_guru'";
     $result = $conn->query($query);
 
     // jika row tidak kosong maka tampilkan data kosong pada tabel
     // jika tidak pecah data menggunakan array
     if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc(); // Ambil data siswa berdasarkan ID
+        $row = $result->fetch_assoc();
     } else {
         echo "<div class='alert alert-danger'>Data tidak ditemukan!</div>";
         exit;
@@ -32,20 +32,24 @@
 
     <table class="table table-bordered">
         <tr>
-            <th>ID Siswa</th>
-            <td>: <?= $row['id'] ?></td>
+            <th>ID Guru</th>
+            <td>: <?= $row['id_guru'] ?></td>
         </tr>
         <tr>
-            <th>Nama Siswa</th>
-            <td>: <?= $row['nama'] ?></td>
+            <th>Nama Guru</th>
+            <td>: <?= $row['nama_guru'] ?></td>
         </tr>
         <tr>
-            <th>Kelas</th>
-            <td>: <?= $row['kelas'] ?></td>
+            <th>Alamat</th>
+            <td>: <?= $row['alamat'] ?></td>
         </tr>
         <tr>
-            <th>Jurusan</th>
-            <td>: <?=$row['jurusan']?></td>
+            <th>Mata Pelajaran</th>
+            <td>: <?=$row['nama_mapel']?></td>
+        </tr>
+        <tr>
+            <th>Semester</th>
+            <td>: <?=$row['semester']?></td>
         </tr>
     </table>
 
