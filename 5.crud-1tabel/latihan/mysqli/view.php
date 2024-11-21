@@ -9,6 +9,17 @@
 <div class="container">
     <h2>Detail Data Siswa</h2>
 <!-- Lakukan proses seperti menampilkan pada tabel -->
+    <?php
+    // masukan konfigurasi koneksi database
+
+    // Ambil ID siswa dari URL
+
+    // buat query select data dari tabel siswa
+
+    // jika row tidak kosong maka tampilkan data kosong pada tabel
+    // jika tidak pecah data menggunakan array
+    
+    ?>
     <table class="table table-bordered">
         <tr>
             <th>ID Siswa</th>
