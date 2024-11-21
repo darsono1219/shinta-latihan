@@ -1,17 +1,20 @@
 <?php
-// Masukan file koneksi database
+// Masukan konfigurasi koneksi database
 
 // Deklarasi & inisialisasi
-    
+
+
 
 //Deskripsi
-// buat sql dan jalankan sql
+// buat query insert data
 
 
 
 // cek apakah berhasil ditambahkan atau tidak
 // jika berhasil kembali ke halaman tabel
 //  jika gagal munculkan erornya
-    
+
+
+// putuskan koneksi dengan database
 
 ?>

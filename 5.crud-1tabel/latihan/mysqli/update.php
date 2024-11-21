@@ -9,6 +9,17 @@
 <body>
 <div class="container">
     <h2>Ubah DATA SISWA</h2>
+    <?php
+    // masukan konfigurasi koneksi database
+
+    // deklarasi & inisialisasi
+    // ambil id dari url link
+
+    // buat query view data dari tabel berdasarkan Id Url
+
+    // lakukan pengecekan data ada, jika ada maka pecah menjadi array
+
+    ?>
     <form >
         <div class="form-group">
             <label>Id :</label>

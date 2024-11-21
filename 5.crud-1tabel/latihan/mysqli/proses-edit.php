@@ -1,17 +1,20 @@
 <?php
-// Masukan file koneksi database
+// Masukan konfigurasi koneksi database
 
 // Deklarasi & inisialisasi
-    
+// dapatkan data dari form input
+
 
 //Deskripsi
-// buat sql dan jalankan sql
+// buat query update data berdasarkan ID yang dipilih
 
 
 
 // cek apakah berhasil diedit atau tidak
 // jika berhasil kembali ke halaman tabel
 //  jika gagal munculkan erornya
-    
+
+
+// putuskan koneksi dengan database
 
 ?>
