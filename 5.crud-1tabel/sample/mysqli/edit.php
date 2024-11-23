@@ -33,17 +33,17 @@
         <!-- <input type="hidden" name="id" value="<?= $row['id'] ?>"/> -->
         <div class="form-group">
             <label>Nama:</label>
-            <input type="text" name="nama" class="form-control" value="<?= htmlspecialchars($row['nama']) ?>"/>
+            <input type="text" name="nama" class="form-control" value="<?=$row['nama'] ?>"/>
         </div>
 
         <div class="form-group">
             <label>Kelas:</label>
-            <input type="text" name="kelas" class="form-control" value="<?= htmlspecialchars($row['kelas']) ?>"/>
+            <input type="text" name="kelas" class="form-control" value="<?= $row['kelas'] ?>"/>
         </div>
 
         <div class="form-group">
             <label>Jurusan:</label>
-            <input type="text" name="jurusan" class="form-control" value="<?= htmlspecialchars($row['jurusan']) ?>"/>
+            <input type="text" name="jurusan" class="form-control" value="<?= $row['jurusan'] ?>"/>
         </div><br>
 
         <div class="form-group">

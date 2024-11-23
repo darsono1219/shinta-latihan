@@ -28,8 +28,9 @@
         // buat query select data pada tabel siswa
         $sql = "SELECT * FROM siswa";
         $result = $conn->query($sql);
-        
-        // jika row tidak kosong maka
+
+        // jika row tidak kosong maka tampilkan data kosong pada tabel
+        // jika tidak pecah data menggunakan array
         if ($result->num_rows > 0) {
             //buat penomoran bayangan
             $no = 1;
@@ -39,7 +40,7 @@
                
                 ?>
                 <tr>
-                    <td><?= $row['id'] ?></td>
+                    <td><?= $no++ ?></td>
                     <td><?= $row['nama'] ?></td>
                     <td><?= $row['kelas'] ?></td>
                     <td><?= $row['jurusan'] ?></td>

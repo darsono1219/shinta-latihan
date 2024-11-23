@@ -7,6 +7,6 @@
 // Membuat koneksi ke database menggunakan MySQLi
 
 
-// Cek koneksi jika gagal tampilkan error jika berhasil tampilkan pesan berhasil
+// Cek koneksi jika gagal tampilkan error
 
 ?>

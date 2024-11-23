@@ -28,7 +28,9 @@
         // deskripsi
         // buat query select data pada tabel siswa
 
-        // jika row tidak kosong maka
+        // jika row tidak kosong maka tampilkan data kosong pada tabel
+        // jika tidak pecah data menggunakan array
+
         //buat penomoran bayangan
 
         //lakukan perulangan untuk menampilkan isi dari tabel

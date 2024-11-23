@@ -10,6 +10,6 @@ $conn = new mysqli($host, $dbuser, $dbpass, $dbname);
 
 // Cek koneksi
 if ($conn->connect_error) {
-    echo "Koneksi gagal: ";
+    die("Koneksi gagal: " . $conn->connect_error);
  }
 ?>
