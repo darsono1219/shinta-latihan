@@ -1,3 +1,14 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Edit Data GURU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2>Ubah Data GURU</h2>
 <?php
 include 'ConfigDatabase.php';
 include 'GuruTransaktion.php';
@@ -18,32 +29,22 @@ if (!$data) {
     exit;
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Form Edit Data GURU</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-    <h2>Ubah Data GURU</h2>
     <form action="proses-edit.php" method="POST">
         <div class="form-group">
             <label>ID Guru:</label>
-            <input type="text" name="id_guru" class="form-control" value="<?= htmlspecialchars($data['id_guru']) ?>" readonly />
+            <input type="text" name="id_guru" class="form-control" value="<?= $data['id_guru'] ?>" readonly />
         </div>
         <div class="form-group">
             <label>Nama Guru:</label>
-            <input type="text" name="nama_guru" class="form-control" value="<?= htmlspecialchars($data['nama_guru']) ?>" />
+            <input type="text" name="nama_guru" class="form-control" value="<?= $data['nama_guru'] ?>" />
         </div>
         <div class="form-group">
             <label>Alamat:</label>
-            <textarea name="alamat" class="form-control"><?= htmlspecialchars($data['alamat']) ?></textarea>
+            <textarea name="alamat" class="form-control"><?= $data['alamat'] ?></textarea>
         </div>
         <div class="form-group">
             <label>Nama Mapel:</label>
-            <input type="text" name="nama_mapel" class="form-control" value="<?= htmlspecialchars($data['nama_mapel']) ?>" />
+            <input type="text" name="nama_mapel" class="form-control" value="<?= $data['nama_mapel'] ?>" />
         </div>
         <div class="form-group">
             <label>Semester:</label>

@@ -3,7 +3,7 @@
 include 'config.php';
 
 // Deklarasi & inisialisasi
-$id_guru = $_POST['id_guru']; // ID guru yang akan dihapus
+$id_guru = $_GET['id_guru']; // ID guru yang akan dihapus
 
 // Hapus data di tabel mapel terlebih dahulu (tabel terkait yang ada relasi)
 $sql_tbl2 = "DELETE FROM mapel WHERE id_guru = '$id_guru'";
