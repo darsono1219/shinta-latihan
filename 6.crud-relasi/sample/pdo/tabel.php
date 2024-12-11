@@ -8,6 +8,7 @@
 <div class="container">
     <br>
     <h4>CRUD Sederhana Data Tabel Guru Join Mapel</h4>
+    <a href="tambah.php" class="btn btn-primary" role="button">Tambah Data</a>
     <table class="table table-bordered table-hover">
         <br>
         <thead>
@@ -66,7 +67,7 @@
         ?>
         </tbody>
     </table>
-    <a href="tambah.php" class="btn btn-primary" role="button">Tambah Data</a>
+    
 </div>
 </body>
 </html>
